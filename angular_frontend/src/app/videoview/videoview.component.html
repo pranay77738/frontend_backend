@@ -1,0 +1,17 @@
+<!-- <iframe [src]="url | safe"></iframe> -->
+
+
+<div id="videoWithNoJs" class="videoWrapper vidicon">
+
+  <img src="assets/camera-video.svg" alt="" class="videoIcon">
+
+<iframe *ngIf="url!=''"
+  width="560"
+  height="315"
+  [src]="url"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+></iframe>
+
+</div>
